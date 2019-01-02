@@ -23,7 +23,7 @@
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
                         <td>
-                            <a class="btn btn-primary" href={{ route('user.edit', ['id' => $user->id]) }}>Edit</a>
+                            <a class="btn btn-primary" href="{{ route('user.edit', ['id' => $user->id]) }}">Edit</a>
                             <a class="btn btn-danger" href="{{ route('user.delete', ['id' => $user->id]) }}">Delete</a>
                         </td>
                     </tr>

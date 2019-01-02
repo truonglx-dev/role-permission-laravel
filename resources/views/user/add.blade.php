@@ -25,7 +25,7 @@
                     <input type="password" class="form-control" placeholder="re-Enter pass" name="confirm_password">
                 </div>
 
-                <select class="form-control" style="margin-bottom: 20px;" name="roles[]" multiple="multiple">
+                <select class="form-control" style="margin-bottom: 20px;" name="roles">
                     @foreach($roles as $role)
                         <option value="{{ $role->id }}">{{ $role->display_name }}</option>
                     @endforeach
